@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>ShipEasy</h2>
+        <div>
+            <a href="#">Home</a>
+            <a href="#calculator">Calculator</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Shipping Cost Calculator</h1>
+        <p>Calculate your parcel delivery charges instantly!</p>
+    </section>
+
+    <div class="container" id="calculator">
+
+        <h2>Calculate Shipping Cost</h2>
+
+        <form id="shippingForm">
+
+            <label>Pickup Location</label>
+            <input type="text" id="pickup"
+                   placeholder="Enter pickup city" required>
+
+            <label>Delivery Location</label>
+            <input type="text" id="delivery"
+                   placeholder="Enter delivery city" required>
+
+            <label>Package Weight (kg)</label>
+            <input type="number" id="weight"
+                   placeholder="Enter weight"
+                   min="0.1" step="0.1" required>
+
+            <label>Package Type</label>
+            <select id="packageType">
+                <option value="document">Document</option>
+                <option value="small">Small Parcel</option>
+                <option value="large">Large Parcel</option>
+            </select>
+
+            <label>Delivery Speed</label>
+            <select id="speed">
+                <option value="standard">Standard Delivery</option>
+                <option value="express">Express Delivery</option>
+            </select>
+
+            <button type="submit">Calculate Shipping</button>
+
+        </form>
+
+        <div id="result">
+            <h3>Shipping Estimate</h3>
+            <p id="route"></p>
+            <p id="days"></p>
+            <p>Total Shipping Cost</p>
+            <p id="price"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 ShipEasy | All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

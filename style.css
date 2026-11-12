@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef3f9;
+    min-height: 100vh;
+}
+
+nav {
+    background: #102a43;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 15px 20px;
+}
+
+.hero h1 {
+    color: #102a43;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #526477;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    background: white;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000015;
+}
+
+.container h2 {
+    text-align: center;
+    color: #102a43;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #38bdf8;
+    border-color: transparent;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+#result {
+    display: none;
+    background: #e0f2fe;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#result h3 {
+    color: #075985;
+    margin-bottom: 12px;
+}
+
+#price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0284c7;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
